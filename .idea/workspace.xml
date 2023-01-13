@@ -1,3 +1,4 @@
+<<<<<<<<< Temporary merge branch 1
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
@@ -125,3 +126,5 @@
     </option>
   </component>
 </project>
+=========
+>>>>>>>>> Temporary merge branch 2
