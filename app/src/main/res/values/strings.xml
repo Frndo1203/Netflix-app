@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Netflix</string>
+    <string name="cast">Cast: %1$s</string>
+    <string name="similar">similar options</string>
+    <string name="cast_tool">Cast: Ben McKenzie, Donal Logue, Jada Pinkett Smith, David Mazouz, Sean Pertwee, Camren Bicondova, Robin Lord Taylor, Cory Michael Smith, Erin Richards, John Doman, Victoria Cartagena, Andrew Stewart-Jones, Larry Pine, Jessica Lucas, Maggie Geha, Charlie Tahan, Drew Powell, Morena Baccarin, Anthony Carrigan, Crystal Reed, Chris Chalk, Damian Young, Michael Buscemi, Alexander Siddig, Michael Maize</string>
+    <string name="description_tool">After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption. When his parents are killed, billionaire playboy Bruce Wayne relocates to Asia, where he is mentored by Henri Ducard and Ra\'s Al Ghul in how to fight evil</string>
+    <string name="title_tool">Batman Begins</string>
 </resources>
