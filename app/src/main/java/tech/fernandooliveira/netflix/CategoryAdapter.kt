@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import tech.fernandooliveira.netflix.model.Category
 
 // Vertical List
-class CategoryAdapter(private val categories: List<Category>) :
-    RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
+class CategoryAdapter(
+    private val categories: List<Category>, private val onItemClickListener: ((Int) -> Unit)? = null
+) : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
         val view =
@@ -33,8 +34,10 @@ class CategoryAdapter(private val categories: List<Category>) :
             txtTitle.text = category.name
 
             val rvCategory: RecyclerView = itemView.findViewById(R.id.rv_category)
-            rvCategory.layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false)
-            rvCategory.adapter = MovieAdapter(category.movies, R.layout.movie_item)
+            rvCategory.layoutManager =
+                LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false)
+            rvCategory.adapter =
+                MovieAdapter(category.movies, R.layout.movie_item, onItemClickListener)
         }
     }
 }
